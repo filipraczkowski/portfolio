@@ -182,6 +182,12 @@
     padding: 16px; font-size: 0.9rem; aspect-ratio: 4 / 3;
   }
 
+  /* Outside engineering */
+  .outside { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; max-width: 820px; }
+  .outside .shot { aspect-ratio: 3 / 2; }
+  .outside h3 { margin: 14px 0 6px; font-size: 1.05rem; }
+  .outside p { font-size: 0.95rem; margin: 0; }
+
   /* Timeline */
   .seasons { list-style: none; margin: 18px 0 0; padding: 0; max-width: var(--measure); }
   .seasons li { display: grid; grid-template-columns: 96px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid var(--rule); }
@@ -241,7 +247,7 @@
     .sheet { margin: 0; border: 0; outline: 0; }
     .intro { grid-template-columns: 1fr; }
     .intro img { width: 128px; height: 128px; }
-    .row.three, .row.two { grid-template-columns: 1fr; }
+    .row.three, .row.two, .outside { grid-template-columns: 1fr; }
     .seasons li { grid-template-columns: 1fr; gap: 2px; }
     .titleblock { grid-template-columns: 1fr; }
   }
@@ -297,7 +303,7 @@
         <p>This climb was designed to lift the entire 135 lb robot from its side in under half a second, and it works a lot like the Z axis on a 3D printer. A Kraken X60 with a gear reduction drives an acme lead screw through a belt, and a high-speed acme nut held in the bearing block carries the load.</p>
         <p>I led the climb’s design while running the mechanical department and machined much of it myself, from the load-bearing bearing block to many of the plates. It also became my main project for training the teammate who’s taking over as lead after me, who learned to run the machines working alongside me.</p>
         <p>During the first load test, the belt started skipping. The standard belt tension calculator didn’t hold up under loads this high, so we laser-cut a few test rigs to find a tension that actually worked. After that, the climb lifted over 200 lb while running at only 2 V of the available 12 V and drawing 15 A against our 120 A current limit. We ran the load tests at low power, but at full power it climbed in under half a second.</p>
-        <p>In the end, it was cut from the competition robot for weight. Looking back, the next place I’d take weight out is the square tube itself, pocketing it with FEA to confirm it keeps its stiffness, the same approach we’d already used on the large side plate.</p>
+        <p>The climb competed on the robot that qualified for the World Championship. Looking back, the next place I’d take weight out is the square tube itself, pocketing it with FEA to confirm it keeps its stiffness, the same approach we’d already used on the large side plate.</p>
       </div>
       <figure>
         <button class="shot" type="button"><img src="images/climb_asm2.jpg" alt="Inventor assembly of the full climb: side plate, tube, hooks, motor, lead screw, and bearing block"></button>
@@ -350,7 +356,7 @@
       </figure>
       <figure>
         <button class="shot" type="button"><img src="images/exploded.jpg" alt="Exploded view of the bearing block: acme nut, top half, and bottom half with bearings on dowel pins"></button>
-        <figcaption>Exploded view: two halves, eight bearings on dowel pins, and the acme nut</figcaption>
+        <figcaption>Exploded view: the acme nut, the load-bearing top half, and the bottom half holding eight bearings on dowel pins</figcaption>
       </figure>
     </div>
 
@@ -482,6 +488,22 @@
         <tr><th scope="row">Education</th><td>Brooklyn Technical High School, Electrical Engineering major, 2026</td></tr>
       </tbody>
     </table>
+  </section>
+
+  <section id="outside">
+    <h2>Outside engineering</h2>
+    <div class="outside">
+      <figure>
+        <button class="shot" type="button"><img class="fill" src="images/ironman.jpg" alt="Filip running during the IRONMAN 70.3 in Poznań"></button>
+        <h3>Half Ironman</h3>
+        <p>Finished an IRONMAN 70.3 (1.2-mile swim, 56-mile bike, 13.1-mile run) in 2026 in Poznań, Poland.</p>
+      </figure>
+      <figure>
+        <button class="shot" type="button"><img class="fill" src="images/organ.jpg" alt="The pipe organ console at Saint Aloysius Church"></button>
+        <h3>Church music</h3>
+        <p>From 2024 to 2026, I was the music director and organist for the Polish-language services at Saint Aloysius Church in New York. I chose the music, coordinated with the singers, and accompanied services on the church’s pipe organ.</p>
+      </figure>
+    </div>
   </section>
 
   <footer class="titleblock" aria-label="Contact">
