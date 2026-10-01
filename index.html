@@ -257,7 +257,7 @@
 <main class="sheet">
 
   <header class="intro">
-    <img src="images/headshot.jpg" alt="Filip Raczkowski">
+    <img src="images/filip-raczkowski.jpg" alt="Filip Raczkowski">
     <div>
       <h1>Filip Raczkowski</h1>
       <p class="role">Mechanical Design Engineer | CAD, Product Design &amp; Prototyping</p>
@@ -277,15 +277,15 @@
 
     <div class="row three fixed">
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/cad_block.jpg" alt="Inventor model of the bearing block"></button>
+        <button class="shot" type="button"><img class="fill" src="images/inventor-model-bearing-block.jpg" alt="Inventor model of the bearing block"></button>
         <figcaption><span class="step">1</span>Designed in Inventor</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/fea_center.jpg" alt="Stress analysis of the bearing block with the load through the center bore"></button>
+        <button class="shot" type="button"><img class="fill" src="images/stress-analysis-bearing-block-load.jpg" alt="Stress analysis of the bearing block with the load through the center bore"></button>
         <figcaption><span class="step">2</span>Checked with FEA</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/part_slots.jpg" alt="The finished aluminum bearing block"></button>
+        <button class="shot" type="button"><img class="fill" src="images/finished-aluminum-bearing-block.jpg" alt="The finished aluminum bearing block"></button>
         <figcaption><span class="step">3</span>Machined from aluminum on a 3-axis CNC</figcaption>
       </figure>
     </div>
@@ -294,7 +294,7 @@
       <div class="dim"><div class="span"><b>135 lb</b></div><span class="what">lift requirement</span></div>
       <div class="dim"><div class="span"><b>200+ lb</b></div><span class="what">load tested</span></div>
       <div class="dim"><div class="span"><b>under 0.5 s</b></div><span class="what">full lift, at full power</span></div>
-      <div class="dim"><div class="span"><b>±0.002 in</b></div><span class="what">on 0.065 in walls</span></div>
+      <div class="dim"><div class="span"><b>±0.002″</b></div><span class="what">on 0.065″ walls</span></div>
       <div class="dim"><div class="span"><b>under 7 lb</b></div><span class="what">mechanism weight</span></div>
     </div>
 
@@ -306,25 +306,32 @@
         <p>The climb competed on the robot that qualified for the World Championship. Looking back, the next place I’d take weight out is the square tube itself, pocketing it with FEA to confirm it keeps its stiffness, the same approach we’d already used on the large side plate.</p>
       </div>
       <figure>
-        <button class="shot" type="button"><img src="images/climb_asm2.jpg" alt="Inventor assembly of the full climb: side plate, tube, hooks, motor, lead screw, and bearing block"></button>
+        <button class="shot" type="button"><img src="images/inventor-assembly-full-climb-side.jpg" alt="Inventor assembly of the full climb: side plate, tube, hooks, motor, lead screw, and bearing block"></button>
         <figcaption>The full climb assembly in Inventor.</figcaption>
       </figure>
     </div>
 
+    <figure style="margin-top:28px">
+      <a class="vid wide" href="https://youtu.be/jvY0kxx4rhQ" data-yt="jvY0kxx4rhQ" aria-label="Play the climb video" target="_blank" rel="noopener noreferrer">
+        <img src="images/video-climb.jpg" alt="">
+        <span class="play" aria-hidden="true"><span></span></span>
+      </a>
+      <figcaption>The climb from the first test through the fix and the 200+ lb lift.</figcaption>
+    </figure>
     <div class="row three portrait" style="margin-top:28px">
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/holding_climb.jpg" alt="Filip holding the finished climb"></button>
+        <button class="shot" type="button"><img class="fill" src="images/filip-holding-finished-climb.jpg" alt="Filip holding the finished climb"></button>
         <figcaption>The finished climb. The giraffe paint job is a nod to how it stretches upward to climb.</figcaption>
       </figure>
       <figure>
         <a class="vid" href="https://www.youtube.com/shorts/_2skk3ZEjks" data-yt="_2skk3ZEjks" aria-label="Play the climb load test video" target="_blank" rel="noopener noreferrer">
-          <img src="images/load_test.jpg" alt="">
+          <img src="images/video-climb-load-test.jpg" alt="">
           <span class="play" aria-hidden="true"><span></span></span>
         </a>
         <figcaption>Load test: over 200 lb on 2 of 12 volts, drawing 15 A against a 120 A limit.</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/leadscrew.jpg" alt="Steel acme lead screw with a machined hex drive end"></button>
+        <button class="shot" type="button"><img class="fill" src="images/steel-acme-lead-screw-machined.jpg" alt="Steel acme lead screw with a machined hex drive end"></button>
         <figcaption>I machined a hex drive end onto the steel acme lead screw on the lathe and mill, using a fixture that held the rod without damaging the threads.</figcaption>
       </figure>
     </div>
@@ -332,70 +339,77 @@
     <h3>The bearing block</h3>
     <div class="split">
       <div>
-        <p>The bearing block is the part that actually carries the full weight of the robot, and it’s one I designed and machined entirely on my own. It slides half an inch into the climb’s square aluminum tube, so the 1.240 in boss had to fit the tube’s 1.25 in opening while still holding eight bearings on dowel pins and a threaded bore for the acme nut. That left walls only 0.065 in thick, which I held to ±0.002 in.</p>
+        <p>The bearing block is the part that actually carries the full weight of the robot, and it’s one I designed and machined entirely on my own. It slides half an inch into the climb’s square aluminum tube, so the 1.240-inch boss had to fit the tube’s 1.25-inch opening while still holding eight bearings on dowel pins and a threaded bore for the acme nut. That left walls only 0.065 inches thick, which I held to ±0.002 inches.</p>
         <p>I modeled it parametrically, so the bearing, dowel, and stock sizes and the machine tolerances are all driven by named parameters. I ran FEA on the thin walls in Inventor, and since the acme nut threads directly into the aluminum and carries the whole robot, I also calculated thread stripping, bolt pull-out, and bolt shear for the bolts holding the block in the tube. I wrote the toolpaths in Inventor CAM and machined it in two halves so the bearings and dowels are held in place between them. After trying thread milling, we settled on hand-tapping the center bore as the simpler option, and the acme nut threads in smoothly and locks at the end.</p>
       </div>
       <figure>
-        <button class="shot" type="button"><img src="images/block_asm.jpg" alt="Bearing block assembly with acme nut, bearings, and dowels"></button>
+        <button class="shot" type="button"><img src="images/bearing-block-assembly-acme-nut.jpg" alt="Bearing block assembly with acme nut, bearings, and dowels"></button>
         <figcaption>The bearing block assembly with its acme nut, bearings, and dowels.</figcaption>
       </figure>
     </div>
 
+    <figure style="margin-top:28px">
+      <a class="vid wide" href="https://youtu.be/tC1ZSXKM6dk" data-yt="tC1ZSXKM6dk" aria-label="Play the bearing block video" target="_blank" rel="noopener noreferrer">
+        <img src="images/video-bearing-block.jpg" alt="">
+        <span class="play" aria-hidden="true"><span></span></span>
+      </a>
+      <figcaption>The bearing block from CAD and FEA to the finished part, ending with the acme nut threading in.</figcaption>
+    </figure>
     <div class="row four tall" style="margin-top:24px">
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/stock_faced.jpg" alt="Aluminum stock after facing"></button>
+        <button class="shot" type="button"><img class="fill" src="images/aluminum-stock-after-facing.jpg" alt="Aluminum stock after facing"></button>
         <figcaption><span class="step">Feb 28</span>Stock faced</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/boss_midway.jpg" alt="Bearing block with the boss side machined"></button>
+        <button class="shot" type="button"><img class="fill" src="images/bearing-block-boss-side-machined.jpg" alt="Bearing block with the boss side machined"></button>
         <figcaption><span class="step">Feb 28</span>Boss side machined</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img src="images/part_boss.jpg" alt="Finished bearing block, boss side, with tapped bore"></button>
+        <button class="shot" type="button"><img src="images/finished-bearing-block-boss-side.jpg" alt="Finished bearing block, boss side, with tapped bore"></button>
         <figcaption><span class="step">Mar 4</span>Finished and tapped</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img src="images/exploded.jpg" alt="Exploded view of the bearing block: acme nut, top half, and bottom half with bearings on dowel pins"></button>
+        <button class="shot" type="button"><img src="images/exploded-view-bearing-block-acme.jpg" alt="Exploded view of the bearing block: acme nut, top half, and bottom half with bearings on dowel pins"></button>
         <figcaption>Exploded view: the acme nut, the load-bearing top half, and the bottom half holding eight bearings on dowel pins</figcaption>
       </figure>
     </div>
 
     <div class="row four fixed" style="margin-top:28px">
       <figure>
-        <button class="shot" type="button"><img src="images/drawing.jpg" alt="Toleranced drawing of the bearing block"></button>
+        <button class="shot" type="button"><img src="images/toleranced-drawing-bearing-block.jpg" alt="Toleranced drawing of the bearing block"></button>
         <figcaption>The toleranced drawing I made to verify the machined part</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img src="images/fea_walls.jpg" alt="Stress analysis of the thin bearing walls"></button>
+        <button class="shot" type="button"><img src="images/stress-analysis-thin-bearing-walls.jpg" alt="Stress analysis of the thin bearing walls"></button>
         <figcaption>FEA on the thin bearing walls</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img src="images/params.jpg" alt="Inventor parameters table for the bearing block"></button>
+        <button class="shot" type="button"><img src="images/inventor-parameters-table-bearing-block.jpg" alt="Inventor parameters table for the bearing block"></button>
         <figcaption>The parameter table that drives the model</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img src="images/cam.jpg" alt="Inventor CAM simulation of the bearing block toolpaths"></button>
+        <button class="shot" type="button"><img src="images/inventor-cam-simulation-bearing-block.jpg" alt="Inventor CAM simulation of the bearing block toolpaths"></button>
         <figcaption>Toolpaths I wrote in Inventor CAM</figcaption>
       </figure>
     </div>
 
     <h3>Belt drive plates</h3>
-    <p>These plates sandwich the climb’s belt drive and support the shafts for its bearings and pulleys. My first design came back from FEA with a minimum safety factor of 0.86, too low for a part carrying climb loads, so I increased the thickness to 0.25 in. That raised the minimum to 1.89 before the plates went to the mill.</p>
+    <p>These plates sandwich the climb’s belt drive and support the shafts for its bearings and pulleys. My first design came back from FEA with a minimum safety factor of 0.86, too low for a part carrying climb loads, so I increased the thickness to 0.25 inches. That raised the minimum to 1.89 before the plates went to the mill.</p>
     <div class="row four landscape" style="margin-top:18px">
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/plate_cad.jpg" alt="Inventor model of a belt drive plate"></button>
+        <button class="shot" type="button"><img class="fill" src="images/inventor-model-belt-drive-plate.jpg" alt="Inventor model of a belt drive plate"></button>
         <figcaption>A belt drive plate in Inventor</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img src="images/plate_fea_before.jpg" alt="Safety factor plot of the first belt drive plate design, minimum 0.86"></button>
+        <button class="shot" type="button"><img src="images/safety-factor-first-drive-plate.jpg" alt="Safety factor plot of the first belt drive plate design, minimum 0.86"></button>
         <figcaption>First version: minimum safety factor of 0.86, too low</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img src="images/plate_fea_after.jpg" alt="Safety factor plot of the final 0.25 in belt drive plate, minimum 1.89"></button>
-        <figcaption>Final version at 0.25 in: minimum safety factor of 1.89</figcaption>
+        <button class="shot" type="button"><img src="images/safety-factor-final-drive-plate.jpg" alt="Safety factor plot of the final 0.25-inch belt drive plate, minimum 1.89"></button>
+        <figcaption>Final version, 0.25 inches thick: minimum safety factor of 1.89</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/mill_plate.jpg" alt="A belt drive plate being machined on the mill"></button>
+        <button class="shot" type="button"><img class="fill" src="images/belt-drive-plate-being-machined.jpg" alt="A belt drive plate being machined on the mill"></button>
         <figcaption>Machining a belt drive plate</figcaption>
       </figure>
     </div>
@@ -404,15 +418,15 @@
     <p>Our team machines nearly everything in house, down to the bearing blocks. I made these alongside the teammate I was mentoring, who was learning to machine at the time.</p>
     <div class="row three square" style="margin-top:18px">
       <figure>
-        <button class="shot" type="button"><img src="images/torch_bend.jpg" alt="Torch-heating an aluminum bracket on a sheet metal brake"></button>
+        <button class="shot" type="button"><img src="images/torch-heating-aluminum-bracket-sheet.jpg" alt="Torch-heating an aluminum bracket on a sheet metal brake"></button>
         <figcaption>Torch-heating a prototype mounting bracket before bending it on the brake</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/coating.jpg" alt="Belt drive plate hanging in the paint booth"></button>
+        <button class="shot" type="button"><img class="fill" src="images/belt-drive-plate-hanging-paint.jpg" alt="Belt drive plate hanging in the paint booth"></button>
         <figcaption>A belt drive plate in the paint booth</figcaption>
       </figure>
       <figure>
-        <button class="shot" type="button"><img src="images/painted.jpg" alt="Side plate and climb tube in a giraffe pattern paint job"></button>
+        <button class="shot" type="button"><img src="images/side-plate-climb-tube-giraffe.jpg" alt="Side plate and climb tube in a giraffe pattern paint job"></button>
         <figcaption>The side plate and climb tube in their giraffe paint job</figcaption>
       </figure>
     </div>
@@ -431,19 +445,25 @@
           <li><span class="when">Season 2</span><span>Co-led a small group that designed and built a climbing mechanism.</span></li>
           <li><span class="when">Season 3</span><span>Served as Lead Mechanical Engineer and led the design of the climb shown above.</span></li>
         </ol>
-        <!-- TODO: embed the 2026 robot highlights video here once it's uploaded -->
       </div>
       <div class="row two portrait">
         <figure>
-          <button class="shot" type="button"><img class="fill" src="images/robot_shop.jpg" alt="The 2026 robot in the shop"></button>
+          <button class="shot" type="button"><img class="fill" src="images/2026-robot-shop.jpg" alt="The 2026 robot in the shop"></button>
           <figcaption>The 2026 robot in the shop</figcaption>
         </figure>
         <figure>
-          <button class="shot" type="button"><img class="fill" src="images/robot_comp.jpg" alt="The 2026 robot at competition"></button>
+          <button class="shot" type="button"><img class="fill" src="images/2026-robot-competition.jpg" alt="The 2026 robot at competition"></button>
           <figcaption>At competition</figcaption>
         </figure>
       </div>
     </div>
+    <figure style="margin-top:28px">
+      <a class="vid wide" href="https://youtu.be/jsgi0bgtBsM" data-yt="jsgi0bgtBsM" aria-label="Play the Houston practice match video" target="_blank" rel="noopener noreferrer">
+        <img src="images/video-houston-practice-match.jpg" alt="">
+        <span class="play" aria-hidden="true"><span></span></span>
+      </a>
+      <figcaption>A practice match I recorded at the 2026 FIRST Championship in Houston.</figcaption>
+    </figure>
   </section>
 
   <section id="chess">
@@ -451,7 +471,7 @@
     <p class="context">Personal project, December 2022 to July 2024.</p>
     <figure>
       <a class="vid wide" href="https://youtu.be/oem6qnru_Ac" data-yt="oem6qnru_Ac" aria-label="Play the chess board build video" target="_blank" rel="noopener noreferrer">
-        <img src="images/chess_final.jpg" alt="">
+        <img src="images/video-chess-board-build.jpg" alt="">
         <span class="play" aria-hidden="true"><span></span></span>
       </a>
       <figcaption>The full build video</figcaption>
@@ -463,11 +483,11 @@
       </div>
       <div class="row two fixed">
         <figure>
-          <button class="shot" type="button"><img src="images/chess_pcb.jpg" alt="Render of the custom stepper-driver PCB"></button>
+          <button class="shot" type="button"><img src="images/render-custom-stepper-driver-pcb.jpg" alt="Render of the custom stepper-driver PCB"></button>
           <figcaption>Custom stepper-driver PCB</figcaption>
         </figure>
         <figure>
-          <button class="shot" type="button"><img src="images/chess_corexy.jpg" alt="The CoreXY gantry before the board went on top"></button>
+          <button class="shot" type="button"><img src="images/corexy-gantry-before-board-went.jpg" alt="The CoreXY gantry before the board went on top"></button>
           <figcaption>The CoreXY gantry, before the board went on</figcaption>
         </figure>
       </div>
@@ -494,12 +514,12 @@
     <h2>Outside engineering</h2>
     <div class="outside">
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/ironman.jpg" alt="Filip running during the IRONMAN 70.3 in Poznań"></button>
+        <button class="shot" type="button"><img class="fill" src="images/filip-running-ironman.jpg" alt="Filip running during the IRONMAN 70.3 in Poznań"></button>
         <h3>Half Ironman</h3>
         <p>Finished an IRONMAN 70.3 (1.2-mile swim, 56-mile bike, 13.1-mile run) in 2026 in Poznań, Poland.</p>
       </figure>
       <figure>
-        <button class="shot" type="button"><img class="fill" src="images/organ.jpg" alt="The pipe organ console at Saint Aloysius Church"></button>
+        <button class="shot" type="button"><img class="fill" src="images/pipe-organ-console-saint-aloysius.jpg" alt="The pipe organ console at Saint Aloysius Church"></button>
         <h3>Church music</h3>
         <p>From 2024 to 2026, I was the music director and organist for the Polish-language services at Saint Aloysius Church in New York. I chose the music, coordinated with the singers, and accompanied services on the church’s pipe organ.</p>
       </figure>
